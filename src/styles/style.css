@@ -1,0 +1,241 @@
+:root {
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #204a87;
+  --secondary: #31404B;
+  --success: #28a745;
+  --info: #50b8e7;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #FFFFFF;
+  --dark: #1E2024;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-size: 12px;
+	color: var(--dark);
+}
+
+
+
+/* ------------------------ Navbar ---------------------------------------- */
+
+
+.nav {
+	background-color: var(--info);
+	width: 100%;
+	display: flex;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.nav-list {
+	width: 80%;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+.nav-brand {
+	width: 20%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	box-sizing: border-box;
+	display: inline-block;
+	line-height: 24px;
+}
+.nav-item {
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: right;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 1.3em;
+	text-decoration: none;
+	color:var(--light) !important;
+}
+
+li.nav-item a:hover{
+  background-color: var(--primary);
+}
+
+/* ------------------------ End Navbar ---------------------------------------- */
+
+/* ------------------------ Hero ---------------------------------------- */
+
+.hero {
+	display: flex;
+	align-items: center;
+	min-height: 380px;
+	width: 100%;
+	text-align: center;
+	background-position: center;
+	background-image: linear-gradient(rgba(0, 0, 7, .7), rgba(0, 0, 7, .7)),url('../public/hero-image_2.jpg');
+
+}
+.hero-inner {
+	margin: 0 auto;
+}
+.hero-title {
+	color: var(--light);
+	font-weight: 600;
+	font-size: 36px;
+	text-shadow: 1px 1px var(--dark);
+}
+.hero-subtitle {
+	color: var(--light);
+	margin-top: 16px;
+	font-size: 18px;
+	font-weight: 600;
+	text-shadow: 1px 1px var(--dark);
+}
+
+/* ------------------------ End Hero ---------------------------------------- */
+
+/* ------------------------ Main ---------------------------------------- */
+
+main {
+	width: 100%;
+	margin: 0 auto
+}
+.content {
+	padding: 32px
+}
+.list-restaurant {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center
+}
+.list-restaurant h1 {
+	font-weight: 700;
+	font-size: 2em;
+	margin-bottom: 50px
+}
+.list {
+	margin: 32px auto auto;
+	text-align: left;
+	display: grid;
+	grid-row-gap: 16px
+}
+.list-item {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative
+}
+.list-item:hover {
+  transition: all 0.5s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: var(--light);
+}
+
+.city {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	border-radius: 5px;
+	background-color: var(--info);
+	padding: 5px 10px 5px;
+	color: var(--light);
+	font-weight: 500;
+}
+.list-item-content {
+	padding: 16px
+}
+.list-item-thumbnail {
+	width: 100%;
+	max-height: 200px;
+}
+
+.list-item-rating {
+  border-radius: 5px;
+  background-color: var(--info);
+  color: var(--light);
+  width: 90px;
+  padding: 5px 10px 5px;
+
+}
+.list-item-rating a{
+  color: var(--light);
+  text-decoration: none;
+}
+
+.list-item-title {
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 10px;
+	transition: 0.3s opacity;
+}
+.list-item-title:hover {
+	opacity: 0.5;
+}
+.list-item-title a {
+	text-decoration: none;
+	color: inherit;
+}
+.list-item-desc {
+	margin-top: -30px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+/* ------------------------ End Main ---------------------------------------- */
+
+/* ------------------------ Footer ---------------------------------------- */
+footer {
+	background-color: var(--info);
+	color: var(--light);
+	font-size: 14px;
+	padding: 2em;
+	width: 100%;
+	text-align: center
+}
+
+/* ------------------------ End Footer ---------------------------------------- */
+
+.skip-to-content {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	background-color: var(--primary);
+	color: var(--light);
+	padding: 10px;
+	font-size: 50px;
+	z-index: 100;
+	text-decoration: none
+}
+.skip-to-content:focus {
+	top: 100px
+}
